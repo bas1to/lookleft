@@ -1,0 +1,23 @@
+{
+  "name": "roadragereloaded",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PubSub.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bas1to/roadragereloaded.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bas1to/roadragereloaded/issues"
+  },
+  "homepage": "https://github.com/bas1to/roadragereloaded#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.4.1"
+  }
+}
