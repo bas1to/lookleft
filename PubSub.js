@@ -1,10 +1,10 @@
 var mongo = require("mongodb");
 
-var mongodbUri = "mongodb://127.0.0.1/opendatacam";
+var mongodbUri = "mongodb://127.0.0.1:27017";
 
 mongo.MongoClient.connect (mongodbUri, function (err, db) {
 
-  db.collection('countedItemsForThisFrame', function(err, collection) {
+  db.collection('recordings', function(err, collection) {
     // open a tailable cursor
     console.log("== open tailable cursor");
     collection.find({}, {tailable:true, awaitdata:true, numberOfRetries:-1})
