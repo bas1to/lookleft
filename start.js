@@ -1,7 +1,7 @@
 var util = require("util");
 
 var spawn = require("child_process").spawn;
-var process = spawn('python',["Energy.py"]);
+var process = spawn('python3',["Energy.py"]);
 
 util.log('readingin')
 
