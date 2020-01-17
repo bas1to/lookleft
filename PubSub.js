@@ -14,7 +14,7 @@ mongo.MongoClient.connect (mongodbUri, function (err, db) {
       // set pin to high -> start child process
       // import express JS module into app 
 
-
+// START CHILD PROCESS CODE
 // and creates its variable. 
 var express = require('express'); 
 var app = express(); 

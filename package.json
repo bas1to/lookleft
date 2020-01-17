@@ -18,6 +18,7 @@
   "homepage": "https://github.com/bas1to/roadragereloaded#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongodb": "^3.4.1"
+    "mongodb": "^3.4.1",
+    "python-shell": "^1.0.8"
   }
 }
