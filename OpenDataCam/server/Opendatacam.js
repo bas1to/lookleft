@@ -296,10 +296,7 @@ module.exports = {
                 } else {
                   // Tracked item has cross the {countingAreaKey} counting line
                   // Count it
-                  // console.log(`Counting ${trackedItem.id}`);
-                  let countedItem = this.countItem(trackedItem, countingAreaKey, frameId);
-                  countedItemsForThisFrame.push(countedItem);
-
+                  console.log(`Counting ${trackedItem.id}`);
                   // SEND PING
                   // Start Python-Script
                   var util = require("util");
@@ -316,6 +313,10 @@ module.exports = {
                     util.log(textChunk);
                   });
                   // END OF PING SENDING
+                  let countedItem = this.countItem(trackedItem, countingAreaKey, frameId);
+                  countedItemsForThisFrame.push(countedItem);
+
+                  
                   
                 }
   
