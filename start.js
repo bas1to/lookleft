@@ -3,7 +3,7 @@ var util = require("util");
 var spawn = require("child_process").spawn;
 var process = spawn('python3',["Energy.py"]);
 
-util.log('readingin')
+util.log('readingin');
 
 process.stdout.on('data',function(chunk){
 
