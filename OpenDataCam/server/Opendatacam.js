@@ -297,13 +297,14 @@ module.exports = {
                   // Tracked item has cross the {countingAreaKey} counting line
                   // Count it
                   console.log(`Counting ${trackedItem.id}`);
+                  console.log('Vor eigenem Script.');
                   // SEND PING
                   // Start Python-Script
                   var util = require("util");
-
+                  console.log('In eigenem Script.');
                   var spawn = require("child_process").spawn;
                   var process = spawn('python3',["Energy.py"]);
-
+                  console.log('Child process spawned.');
                   util.log('readingin')
 
                   process.stdout.on('data',function(chunk){
@@ -312,6 +313,7 @@ module.exports = {
 
                     util.log(textChunk);
                   });
+                  console.log('Eigenes Script beendet.');
                   // END OF PING SENDING
                   let countedItem = this.countItem(trackedItem, countingAreaKey, frameId);
                   countedItemsForThisFrame.push(countedItem);
