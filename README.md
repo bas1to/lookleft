@@ -4,14 +4,14 @@ A warning device for pedestrians, that shows a signal when a car is approaching.
 
 ## Table of Contents
 
-* [Table of Contents] (#table-of-contents)
-* [General Info] (#general-info)
-* [Getting Started] (#getting-started)
-    * [Prerequisites] (#prerequisites)
-    * [Installation] (#installation)
-    * [Usage] (#usage)
-* [Acknowledgements] (#acknowledgements)
-* [License] (#license)
+* [Table of Contents](#table-of-contents)
+* [General Info](#general-info)
+* [Getting Started](#getting-started)
+    * [Prerequisites](#prerequisites)
+    * [Installation](#installation)
+    * [Usage](#usage)
+* [Acknowledgements](#acknowledgements)
+* [License](#license)
 
 ## General Info
 
