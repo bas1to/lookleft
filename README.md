@@ -16,6 +16,7 @@ A warning device for pedestrians, that shows a signal when a car is approaching.
 ## General Info
 
 Look Left is designed to help minimize the number of traffic accidents involving pedestrians crossing the street. The warning device is to be hung at dangerous crossing points. A modified OpenDataCam is being used to track cars and when a vehicle is approaching the device shows a visual signal, prompting the pedestrians to pay attention and look around before crossing. ([OpenDataCam]( https://github.com/opendatacam/opendatacam) is an open source tool from CityLAB Berlin.)
+
 (Photos of the device and the visual signals)
 
 ## Getting Started
