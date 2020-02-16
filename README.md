@@ -38,6 +38,7 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 ```
 git clone --depth 1 https://github.com/bas1to/lookleft/opendatacam.git
 ```
+
     2. Connect the USB camera to the Jetson board.
     3. Connect the LoRa module and antenna to the Arduino board.
 
