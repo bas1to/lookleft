@@ -56,11 +56,12 @@ The devices communicate via LoRa. Since they are not too far away from each othe
   4. Connect the Arduino board with the Jetson board.
 - The warning device
   1. Connect the LED panel and the second Arduino.
-  2. Connect the second LoRa module and antenna to the Arduino (like step 3. in the previous section).  Run the transmitter script on the first Arduino (the camera) and the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel.ino) on the second Arduino (the warning device). (You need the Arduino IDE for that.)
+  2. Connect the second LoRa module and antenna to the Arduino (like step 3. in the previous section).  Run the [transmitter script](https://github.com/bas1to/lookleft/blob/master/transmitter.ino) on the first Arduino (the camera) and the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel.ino) on the second Arduino (the warning device). (You need the Arduino IDE for that.)
 
 
 ### Usage
 Hang up the devices and turn on the Jetson board. The camera will start automatically. 
+
 (Screenshots to come)
 
 ## Acknowledgements
