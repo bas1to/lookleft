@@ -34,13 +34,14 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 
 ### Installation
 - The Camera:
-    1. First install the OpenDataCam on your Jetson board. Follow the instructions [here]( https://github.com/bas1to/lookleft/blob/master/opendatacam/documentation/USE_WITHOUT_DOCKER.md). In step 4. use the following command instead of the first one:
+  1. First install the OpenDataCam on your Jetson board. Follow the instructions [here]( https://github.com/bas1to/lookleft/blob/master/opendatacam/documentation/USE_WITHOUT_DOCKER.md). In step 4. use the following command instead of the first one:
+  
 ```
 git clone --depth 1 https://github.com/bas1to/lookleft/opendatacam.git
 ```
 
-    2. Connect the USB camera to the Jetson board.
-    3. Connect the LoRa module and antenna to the Arduino board.
+  2. Connect the USB camera to the Jetson board.
+  3. Connect the LoRa module and antenna to the Arduino board.
 
 | Arduino Uno | OSOYOO UART LoRa wireless module |
 | ----------- | -------------------------------- |
@@ -52,10 +53,10 @@ git clone --depth 1 https://github.com/bas1to/lookleft/opendatacam.git
 | 5V | VCC |
 | GND | GND |
 
-    4. Connect the Arduino board with the Jetson board.
+  4. Connect the Arduino board with the Jetson board.
 - The warning device
-    1. Connect the LED panel and the second Arduino.
-    2. Connect the second LoRa module and antenna to the Arduino (like step 3. in the previous section).  Run the transmitter script on the first Arduino (the camera) and the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel.ino) on the second Arduino (the warning device). (You need the Arduino IDE for that.)
+  1. Connect the LED panel and the second Arduino.
+  2. Connect the second LoRa module and antenna to the Arduino (like step 3. in the previous section).  Run the transmitter script on the first Arduino (the camera) and the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel.ino) on the second Arduino (the warning device). (You need the Arduino IDE for that.)
 
 
 ### Usage
