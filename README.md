@@ -65,10 +65,15 @@ Hang up the devices and turn on the Jetson board. The camera will start automati
 
 ## Acknowledgements
 Bastian Breibert: [https://github.com/bas1to]( https://github.com/bas1to)
+
 Janis Hahn: []()
+
 Ralitsa Dineva: [https://github.com/ralitsadineva]( https://github.com/ralitsadineva)
+
 Carolina Sprick: [https://github.com/carosprick]( https://github.com/carosprick)
+
 Minseong Kim: [https://github.com/kmsk07]( https://github.com/kmsk07)
+
 Yichao Wang: [https://github.com/yichaowang467]( https://github.com/yichaowang467)
 
 ## License
