@@ -43,15 +43,15 @@ The devices communicate via LoRa. Since they are not too far away from each othe
   2. Connect the USB camera to the Jetson board.
   3. Connect the LoRa module and antenna to the Arduino board.
 
-| Arduino Uno | OSOYOO UART LoRa wireless module |
-| ----------- | -------------------------------- |
-| GND | M0 |
-| GND | M1 |
-| D3 | RXD |
-| D2 | TXD |
-| NC | AUX |
-| 5V | VCC |
-| GND | GND |
+  | Arduino Uno | OSOYOO UART LoRa wireless module |
+  | ----------- | -------------------------------- |
+  | GND | M0 |
+  | GND | M1 |
+  | D3 | RXD |
+  | D2 | TXD |
+  | NC | AUX |
+  | 5V | VCC |
+  | GND | GND |
 
   4. Connect the Arduino board with the Jetson board.
 - The warning device
