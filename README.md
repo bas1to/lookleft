@@ -36,7 +36,7 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 ### Flashing the Jetson
 [Guide to how to flash your Jetson](https://github.com/opendatacam/opendatacam/blob/master/documentation/jetson/FLASH_JETSON.md) 
 
-[How to prepare a Jetson AGX Xavier for a flash](https://www.youtube.com/watch?v=-nX8eD7FusQ)
+[Prepare Jetson AGX Xavier for a flash](https://www.youtube.com/watch?v=-nX8eD7FusQ) (Youtube Video)
 
 ### Installation
 - The camera:
