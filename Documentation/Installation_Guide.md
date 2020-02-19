@@ -1,14 +1,14 @@
 ## How to use opendatacam without docker
 
-- [1. Install OpenCV 3.4.3 with Gstreamer:](#1-install-opencv-343-with-gstreamer-)
-- [2. Install Darknet (Neural network framework running YOLO)](#2-install-darknet--neural-network-framework-running-yolo-)
+- [1. OpenCV 3.4.3 with Gstreamer:](#1-install-opencv-343-with-gstreamer-)
+- [2. Darknet (Neural network framework running YOLO)](#2-install-darknet--neural-network-framework-running-yolo-)
   * [Get the source files](#get-the-source-files)
   * [Modify the Makefile before compiling](#modify-the-makefile-before-compiling)
   * [Compile darknet](#compile-darknet)
   * [Download weight file](#download-weight-file)
   * [(Optional) Test darknet](#-optional--test-darknet)
-- [3. Install node.js, mongodb](#3-install-nodejs--mongodb)
-- [4. Install opendatacam](#4-install-opendatacam)
+- [3. Node.js, mongodb](#3-install-nodejs--mongodb)
+- [4. Opendatacam](#4-install-opendatacam)
 
 ### 1. OpenCV 3.4.3 with Gstreamer:
 
