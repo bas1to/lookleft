@@ -5,6 +5,7 @@
 // ###############################################################
 // WARNING: this code is experimental and not tested at the moment
 // see it more as an idea for improvement
+// if it does not work use the receiver_panel_improved.ino
 // ###############################################################
 
 #define HT_DATA 2
