@@ -223,7 +223,7 @@ npm run start
 
 - Config **OpenDataCam** to run on boot
 
-Do this so the OpenDataCam will start automatically
+Do this so the OpenDataCam will start automatically.
 
 ```bash
 # install pm2
@@ -248,3 +248,18 @@ Fill in the following information for the fields:
 Name: Autostart chromium
 
 Command: chromium-browser http://localhost:8080 --start-fullscreen
+
+Sadly the OpenDataCam has a Bug right now. The RAM isn't clearing itself and the microcontroller we used (Nvidia Jetson Xavier) 
+crashed after 30 minutes. When this bug is fixed ignore the next part.
+
+To automatically restart the Microcontroller every 20 minutes do this:
+
+Type in your console:
+```bash
+sudo crontab -e
+
+# go with your arrow key to the bottom of the text and type
+
+*/20 * * * * root /sbin/shutdown -r now
+```
+Restart the Board. Now it should restart every 20 minutes. (10:20 , 10:40 and so on)
