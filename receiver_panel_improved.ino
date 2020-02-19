@@ -102,6 +102,7 @@ void loop() {
 
 //if after the device catched the signal
 
+//incoming signal
   if(loraSerial.available() > 1){
     String input = loraSerial.readString();
     Serial.println(input);  
