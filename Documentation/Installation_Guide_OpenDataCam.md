@@ -223,7 +223,7 @@ npm run start
 
 - Config **OpenDataCam** to run on boot
 
-Do this so the OpenDataCam will start automatically.
+Do this so the OpenDataCam will **start automatically**.
 
 ```bash
 # install pm2
@@ -248,6 +248,8 @@ Fill in the following information for the fields:
 Name: Autostart chromium
 
 Command: chromium-browser http://localhost:8080 --start-fullscreen
+
+**Workaround for the OpenDataCam Bug**
 
 Sadly the OpenDataCam has a Bug right now. The RAM isn't clearing itself and the microcontroller we used (Nvidia Jetson Xavier) 
 crashed after 30 minutes. When this bug is fixed ignore the next part.
