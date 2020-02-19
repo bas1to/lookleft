@@ -65,7 +65,10 @@ The devices communicate via LoRa. Since they are not too far away from each othe
   
   **TODO:** Schaltplan Bild
   
-  2. Connect the second LoRa module and antenna to the Arduino (like step 3. in the previous section).
+  2. Connect the second LoRa module and antenna to the Arduino.
+  
+  **TODO:** Schaltplan Bild
+  
   3. Run the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel_improved.ino) on the Arduino. (You need the Arduino IDE for that.)
 
 
