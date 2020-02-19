@@ -5,6 +5,11 @@
 
 SoftwareSerial loraSerial(2, 3); // TX, RX
 
+// using the command "on" may cause problems with other devices sending the same string
+// we recommend generating a random string with a tool like https://passwordsgenerator.net/
+// set length to 6 and only select lowercase characters, uppercase characters and numbers
+// remember to paste the string in the receiver_panel.ino
+
 String turnOn = "on";
 
 

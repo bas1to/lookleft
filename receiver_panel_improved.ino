@@ -8,6 +8,9 @@
 #define HT_CS   4
 #define HT_CS2  5
 
+// paste your generated string here
+#define IN_STR "on"
+
 // Lora Antenna
 SoftwareSerial loraSerial(2, 3); // TX, RX
 
@@ -98,14 +101,12 @@ void setup()
 }
 void loop() {
 
- // 
-
 //if after the device catched the signal
 
   if(loraSerial.available() > 1){
     String input = loraSerial.readString();
     Serial.println(input);  
-    if(input.indexOf("on") >= 0) {
+    if(input.indexOf(IN_STR) >= 0) {
 
       for (i = 0; i < 4; i++) {
       matrix.begin(ADA_HT1632_COMMON_16NMOS);
