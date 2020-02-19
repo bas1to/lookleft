@@ -25,8 +25,8 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 ## Getting Started
 
 ### Prerequisites
-+ Nvidia Jetson Xavier or a similar board
-+ A Webcam
++ Nvidia Jetson AGX Xavier, Nvidia Jetson X2 or Nvidia Jetson Nano
++ A USB Webcam e.g. Logitech C920 HD Pro
 + 2x Arduino Uno boards
 + 2x LoRa modules and antennas (OSOYOO SX1276 LoRa Radio Wireless 868Mhz UART Serial Module)
 + A LED panel
