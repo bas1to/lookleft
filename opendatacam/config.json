@@ -11,7 +11,7 @@
     "raspberrycam_no_docker": "nvarguscamerasrc ! video/x-raw(memory:NVMM),width=1280, height=720, framerate=30/1, format=NV12 ! nvvidconv ! video/x-raw, format=BGRx, width=640, height=360 ! videoconvert ! video/x-raw, format=BGR ! appsink",
     "remote_cam": "YOUR IP CAM STREAM (can be .m3u8, MJPEG ...), anything supported by opencv"
   },
-  "VALID_CLASSES": ["*"],
+  "VALID_CLASSES": ["bus","car","bicycle","motorbike","train"],
   "DISPLAY_CLASSES": [
     { "class": "bicycle", "icon": "1F6B2.svg"},
     { "class": "person", "icon": "1F6B6.svg"},

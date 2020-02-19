@@ -61,7 +61,10 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 
 
 ### Usage
-Hang up the devices and turn on the Jetson board. The camera will start automatically. 
+- Set up the devices on your selected locations and turn on the Jetson board. The camera will start automatically.
+- Switch to the `Count Itmes` tab an set a counting line as needed. Everytime a vehicle crosses this line the warning will be send and the LED panel will warn the pedestrians.
+- Note: Our setup is limited for detecting vehicles only at the moment. (You can change that in the `config.json`.)
+- You need a monitor for setting up the camera and the counting line. After that the setup works fine without monitor and any peripherals.
 
 (Screenshots to come)
 
