@@ -40,7 +40,7 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 
 ### Installation
 - The camera:
-  1. First install the OpenDataCam on your Jetson board. Follow the instructions [here](https://github.com/bas1to/lookleft/blob/master/Documentation/Installation_Guide_OpenDataCam.md). 
+  1. [Install the OpenDataCam on your Jetson board](https://github.com/bas1to/lookleft/blob/master/Documentation/Installation_Guide_OpenDataCam.md).
   2. Connect the USB camera to the Jetson board.
   3. Connect the LoRa module and antenna to the Arduino board.
 
