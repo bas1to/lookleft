@@ -232,3 +232,7 @@ sudo pm2 startup
 sudo pm2 start npm --name "opendatacam" -- start
 sudo pm2 save
 ```
+Then go to your `Startup Applications` and press `add` in the `Startup Applications Preferences` window.
+Fill in the following information for the fields:
+Name: Autostart chromium
+Command: chromium-browser http://localhost:8080 --start-fullscreen
