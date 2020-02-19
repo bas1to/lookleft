@@ -28,7 +28,9 @@ wget https://github.com/opendatacam/opencv-builds/raw/master/opencv-tx2-3.4.3/Op
 wget https://github.com/opendatacam/opencv-builds/raw/master/opencv-tx2-3.4.3/OpenCV-3.4.3-aarch64-python.deb
 
 # For Jetson Xavier
-# TODO compile binaries specific for xavier architecture
+wget https://github.com/opendatacam/opencv-builds/blob/master/opencv-xavier-3.4.3/OpenCV-3.4.3-aarch64-libs.deb
+wget https://github.com/opendatacam/opencv-builds/blob/master/opencv-xavier-3.4.3/OpenCV-3.4.3-aarch64-dev.deb
+wget https://github.com/opendatacam/opencv-builds/blob/master/opencv-xavier-3.4.3/OpenCV-3.4.3-aarch64-python.deb
 
 # Install .deb files
 sudo dpkg -i OpenCV-3.4.3-aarch64-libs.deb
