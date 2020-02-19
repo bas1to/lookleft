@@ -8,6 +8,7 @@ A warning device for pedestrians, that shows a signal when a car is approaching.
 * [General Info](#general-info)
 * [Getting Started](#getting-started)
     * [Prerequisites](#prerequisites)
+    * [Flashing the Jetson](#flashing-the-jetson)
     * [Installation](#installation)
     * [Usage](#usage)
 * [Acknowledgements](#acknowledgements)
@@ -31,6 +32,11 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 + 2x LoRa modules and antennas (OSOYOO SX1276 LoRa Radio Wireless 868Mhz UART Serial Module)
 + A [HT1632C](https://learn.adafruit.com/16x24-led-matrix/introduction) LED panel by Adafruit
 + Cables
+
+### Flashing the Jetson
+[Guido to how to flash your Jetson](https://github.com/opendatacam/opendatacam/blob/master/documentation/jetson/FLASH_JETSON.md) 
+
+How to prepare a Jetson AGX Xavier for a flash: https://www.youtube.com/watch?v=-nX8eD7FusQ
 
 ### Installation
 - The camera:
