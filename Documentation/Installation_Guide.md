@@ -1,8 +1,8 @@
 ## How to use opendatacam without docker
 
 - [1. OpenCV 3.4.3 with Gstreamer:](#1-opencv-343-with-gstreamer-)
-- [2. Darknet (Neural network framework running YOLO)](#2-darknet--neural-network-framework-running-yolo-)
-- [3. Node.js, mongodb](#3-nodejs--mongodb)
+- [2. Darknet (Neural network framework running YOLO)](#2-darknet-neural-network-framework-running-yolo-)
+- [3. Node.js, mongodb](#3-nodejs-and-mongodb)
 - [4. Opendatacam](#4-opendatacam)
 
 ### 1. OpenCV 3.4.3 with Gstreamer:
