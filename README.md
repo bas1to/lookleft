@@ -16,10 +16,10 @@ A warning device for pedestrians, that shows a signal when a car is approaching.
 
 ## General Info
 
-Look Left is part of an interdisciplinary project of FU Berlin and Weissensee School of Art and Design Berlin with the topic Smart City. Look Left is designed to help minimize the number of traffic accidents involving pedestrians crossing the street. The warning device is to be hung at dangerous crossing points. A modified OpenDataCam is being used to track cars and when a vehicle is approaching the warning device shows a visual signal, prompting the pedestrians to pay attention and look around before crossing. ([OpenDataCam]( https://github.com/opendatacam/opendatacam) is an open source tool by [Move-Lab](https://www.move-lab.com/) .)
-The camera consists of a Nvidia Jetson Xavier board running the modified OpenDataCam and a USB camera connected to the board.
-The warning device itself consists of LED panel, controlled by an Arduino.
-The devices communicate via LoRa. Since they are not too far away from each other there is no need for Internet connection.
+Look Left is part of an interdisciplinary project of FU Berlin and Weißensee School of Art and Design Berlin with the topic Smart City. Look Left is designed to help minimize the number of traffic accidents involving pedestrians crossing the street. The warning device is to be hung at dangerous crossing points. A modified OpenDataCam is being used to track cars and when a vehicle is approaching the warning device shows a visual signal, prompting the pedestrians to pay attention and look around before crossing. ([OpenDataCam]( https://github.com/opendatacam/opendatacam) is an open source tool by [Move-Lab](https://www.move-lab.com/).)
+The camera consists of a Nvidia Jetson AGX Xavier board running the modified OpenDataCam and a USB camera connected to the board.
+The warning device itself consists of an LED panel, controlled by an Arduino.
+The devices communicate via LoRa. Since they are not too far away from each other there is no need for an Internet connection.
 
 (Photos of the device and the visual signals)
 
