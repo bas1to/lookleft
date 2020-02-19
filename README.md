@@ -15,7 +15,7 @@ A warning device for pedestrians, that shows a signal when a car is approaching.
 
 ## General Info
 
-Look Left is part of an interdisciplinary project of FU Berlin and Weissensee School of Art and Design Berlin with the topic Smart City. Look Left is designed to help minimize the number of traffic accidents involving pedestrians crossing the street. The warning device is to be hung at dangerous crossing points. A modified OpenDataCam is being used to track cars and when a vehicle is approaching the warning device shows a visual signal, prompting the pedestrians to pay attention and look around before crossing. ([OpenDataCam]( https://github.com/opendatacam/opendatacam) is an open source tool by Moovel Lab.)
+Look Left is part of an interdisciplinary project of FU Berlin and Weissensee School of Art and Design Berlin with the topic Smart City. Look Left is designed to help minimize the number of traffic accidents involving pedestrians crossing the street. The warning device is to be hung at dangerous crossing points. A modified OpenDataCam is being used to track cars and when a vehicle is approaching the warning device shows a visual signal, prompting the pedestrians to pay attention and look around before crossing. ([OpenDataCam]( https://github.com/opendatacam/opendatacam) is an open source tool by [Move-Lab](https://www.move-lab.com/) .)
 The camera consists of a Nvidia Jetson Xavier board running the modified OpenDataCam and a USB camera connected to the board.
 The warning device itself consists of LED panel, controlled by an Arduino.
 The devices communicate via LoRa. Since they are not too far away from each other there is no need for Internet connection.
@@ -29,12 +29,12 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 + A USB Webcam e.g. Logitech C920 HD Pro
 + 2x Arduino Uno boards
 + 2x LoRa modules and antennas (OSOYOO SX1276 LoRa Radio Wireless 868Mhz UART Serial Module)
-+ A LED panel
++ A [HT1632C](https://learn.adafruit.com/16x24-led-matrix/introduction) LED panel by Adafruit
 + Cables
 
 ### Installation
-- The Camera:
-  1. First install the OpenDataCam on your Jetson board. Follow the instructions [here]( https://github.com/bas1to/lookleft/blob/master/opendatacam/documentation/USE_WITHOUT_DOCKER.md). In step 4. use the following command instead of the first one:
+- The camera:
+  1. First install the OpenDataCam on your Jetson board. Follow the instructions [here](https://github.com/bas1to/lookleft/blob/master/opendatacam/documentation/USE_WITHOUT_DOCKER.md). In step 4. use the following command instead of the first one:
   
   ```
   git clone --depth 1 https://github.com/bas1to/lookleft/opendatacam.git
@@ -54,7 +54,7 @@ The devices communicate via LoRa. Since they are not too far away from each othe
   | GND | GND |
 
   4. Connect the Arduino board with the Jetson board.
-- The warning device
+- The warning device:
   1. Connect the LED panel and the second Arduino.
   2. Connect the second LoRa module and antenna to the Arduino (like step 3. in the previous section).  Run the [transmitter script](https://github.com/bas1to/lookleft/blob/master/transmitter.ino) on the first Arduino (the camera) and the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel.ino) on the second Arduino (the warning device). (You need the Arduino IDE for that.)
 
