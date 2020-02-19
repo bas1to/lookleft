@@ -12,7 +12,7 @@ Make sure that your Nvidia Microcontroller is connected to the internet.
 Use these commands to install the main ODC parts:
 
 ```bash
-
+# Removes old OpenCV files
 sudo apt-get purge libopencv*
 
 # Download .deb files
@@ -105,11 +105,18 @@ sudo jetson_clocks
 make
 ```
 
+To fix the "nvcc not found" error update `Makefile`
+```bash
+
+NVCC=/usr/local/cuda/bin/nvcc
+
+```
+
 #### Download weight file
 
 
 ```bash
-cd darknet #Optional if you are in the wrong folder
+cd darknet # Optional if you are in the wrong folder
 
 # YOLOv2-VOC
 wget https://pjreddie.com/media/files/yolo-voc.weights --no-check-certificate
@@ -171,7 +178,7 @@ pwd .
 
 - Specify `VIDEO_INPUT` and `NEURAL_NETWORK` in `opendatacam/config.json` 
 
-*For Jetson Nano (recommanded)*
+*For Jetson Nano (recommended)*
 
 ```json
 {
@@ -180,7 +187,7 @@ pwd .
 }
 ```
 
-*For Jetson TX2 (recommanded)*
+*For Jetson TX2 (recommended)*
 
 ```json
 {
@@ -189,7 +196,7 @@ pwd .
 }
 ```
 
-*For Jetson Xavier (recommanded)*
+*For Jetson Xavier (recommended)*
 
 ```json
 {
