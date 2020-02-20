@@ -1,7 +1,7 @@
-## How to use install our modified OpenDataCam
+## How to install our modified OpenDataCam
 
-- [1. OpenCV 3.4.3 with Gstreamer:](#1-opencv-343-with-gstreamer-)
-- [2. Darknet (Neural network framework running YOLO)](#2-darknet-neural-network-framework-running-yolo-)
+- [1. OpenCV 3.4.3 with Gstreamer:](#1-opencv-343-with-gstreamer)
+- [2. Darknet (Neural network framework running YOLO)](#2-darknet-neural-network-framework-running-yolo)
 - [3. Node.js and mongodb](#3-nodejs-and-mongodb)
 - [4. Opendatacam](#4-opendatacam)
 
