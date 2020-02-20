@@ -21,6 +21,8 @@ The camera consists of a Nvidia Jetson AGX Xavier board running the modified Ope
 The warning device itself consists of an LED panel, controlled by an Arduino.
 The devices communicate via LoRa. Since they are not too far away from each other there is no need for an Internet connection.
 
+[See video of the devices](https://vimeo.com/391959944)
+
 (Photos of the device and the visual signals)
 
 ## Getting Started
