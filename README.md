@@ -12,6 +12,7 @@ A warning device for pedestrians, that shows a signal when a car is approaching.
     * [Installation](#installation)
     * [Usage](#usage)
 * [Acknowledgements](#acknowledgements)
+* [Software architecture](#software-architecture)
 * [License](#license)
 
 ## General Info
@@ -21,7 +22,9 @@ The camera consists of a Nvidia Jetson AGX Xavier board running the modified Ope
 The warning device itself consists of an LED panel, controlled by an Arduino.
 The devices communicate via LoRa. Since they are not too far away from each other there is no need for an Internet connection.
 
-(Photos of the device and the visual signals)
+[See video of the devices](https://vimeo.com/391959944)
+
+![Our Device](https://github.com/bas1to/lookleft/blob/master/Documentation/Picture%20of%20our%20Device.jpeg)
 
 ## Getting Started
 
@@ -54,8 +57,9 @@ The devices communicate via LoRa. Since they are not too far away from each othe
   | 5V | VCC |
   | GND | GND |
   
-  **TODO:** Schaltplan Bild
-  
+  ![connect LoRa](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.23.jpeg)
+  ![connect arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.24.jpeg)
+
   5. Connect the Arduino board with the Jetson board. (Allways unplug all devices from power before connecting cables.)
   6. Run the [transmitter script](https://github.com/bas1to/lookleft/blob/master/transmitter.ino) on the Arduino. (You need the Arduino IDE for that.)
   7. (Start the Jetson)
@@ -63,12 +67,14 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 - **The warning device:**
   1. Connect the LED panel and the second Arduino.
   
-  **TODO:** Schaltplan Bild
-  
+  ![connect LED panel and arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.25.jpeg)
+
+
   2. Connect the second LoRa module and antenna to the Arduino.
   
-  **TODO:** Schaltplan Bild
-  
+  ![connect LoRa](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.23.jpeg)
+  ![connect arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.24.jpeg)
+
   3. Run the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel_improved.ino) on the Arduino. (You need the Arduino IDE for that.)
 
 
@@ -78,7 +84,9 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 - Note: Our setup is limited for detecting vehicles only at the moment. (You can change that in the `config.json`.)
 - You need a monitor for setting up the camera and the counting line. After that the setup works fine without monitor and any peripherals.
 
-(Screenshots to come)
+## Software architecture
+
+The OpenDataCam is capable of recognizing and tracking diffrent objectives. It is using the real-time object detection system YOLO (you only look once). We use this tracking feature to start a pythonscript child process or to be more detailed: Everytime a from us selected object is counted and before it is written into the mongodb we start our script. The script then sets a pin on the Jetson microcontroller high. That pin is connected to an arduino uno that is connected to a LoRa chip and antenna which then sends a predetermined string (of your choice) via the LoRa network over the radio frenquency 9600 (you can change it) to our warning device and the other arduino uno (also with the LoRa chip and antenna). Our warning device is always listening for the string and when the right string is read, the device leaves the idle state and changes to the warning state. After 8 seconds it changes back to the idle state if it hasn't received another warning.
 
 ## Acknowledgements
 Bastian Breibert: [https://github.com/bas1to]( https://github.com/bas1to)
