@@ -23,7 +23,6 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 
 [See video of the devices](https://vimeo.com/391959944)
 
-(Photos of the device and the visual signals)
 ![Our Device](https://github.com/bas1to/lookleft/blob/master/Documentation/Picture%20of%20our%20Device.jpeg)
 
 ## Getting Started
@@ -81,7 +80,6 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 - Note: Our setup is limited for detecting vehicles only at the moment. (You can change that in the `config.json`.)
 - You need a monitor for setting up the camera and the counting line. After that the setup works fine without monitor and any peripherals.
 
-(Screenshots to come)
 
 ## Acknowledgements
 Bastian Breibert: [https://github.com/bas1to]( https://github.com/bas1to)
