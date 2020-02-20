@@ -45,7 +45,7 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 - **The camera:**
   1. [Install the OpenDataCam on your Jetson board](https://github.com/bas1to/lookleft/blob/master/Documentation/Installation_Guide_OpenDataCam.md).
   2. Connect the USB camera to the Jetson board.
-  3. Connect the LoRa module and antenna to the Arduino board.
+  3. [Connect](https://github.com/bas1to/lookleft/blob/master/Documentation/lora%20chip%20cam.jpeg) the LoRa module and antenna to the Arduino board.
 
   | Arduino Uno | OSOYOO UART LoRa wireless module |
   | ----------- | -------------------------------- |
@@ -57,26 +57,14 @@ The devices communicate via LoRa. Since they are not too far away from each othe
   | 5V | VCC |
   | GND | GND |
   
-  ![connect LoRa](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.23.jpeg)
-  ![connect arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.24.jpeg)
-
-  5. Connect the Arduino board with the Jetson board. (Allways unplug all devices from power before connecting cables.)
+  5. [Connect](https://github.com/bas1to/lookleft/blob/master/Documentation/connect%20jetson.jpeg) the Arduino board with the Jetson board. (Allways unplug all devices from power before connecting cables.)
   6. Run the [transmitter script](https://github.com/bas1to/lookleft/blob/master/transmitter.ino) on the Arduino. (You need the Arduino IDE for that.)
   7. (Start the Jetson)
   
 - **The warning device:**
-  1. Connect the LED panel and the second Arduino.
-  
-  ![connect LED panel and arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.25.jpeg)
-
-
-  2. Connect the second LoRa module and antenna to the Arduino.
-  
-  ![connect LoRa](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.23.jpeg)
-  ![connect arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.24.jpeg)
-
+  1. [Connect](https://github.com/bas1to/lookleft/blob/master/Documentation/led%20panel.jpeg) the LED panel and the second Arduino.  
+  2. [Connect](https://github.com/bas1to/lookleft/blob/master/Documentation/lora%20chip%20warning.jpeg) the second LoRa module and antenna to the Arduino.  
   3. Run the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel_improved.ino) on the Arduino. (You need the Arduino IDE for that.)
-
 
 ### Usage
 - Set up the devices on your selected locations and turn on the Jetson board. The camera will start automatically.
