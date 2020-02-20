@@ -24,7 +24,6 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 
 [See video of the devices](https://vimeo.com/391959944)
 
-(Photos of the device and the visual signals)
 ![Our Device](https://github.com/bas1to/lookleft/blob/master/Documentation/Picture%20of%20our%20Device.jpeg)
 
 ## Getting Started
@@ -58,8 +57,9 @@ The devices communicate via LoRa. Since they are not too far away from each othe
   | 5V | VCC |
   | GND | GND |
   
-  **TODO:** Schaltplan Bild
-  
+  ![connect LoRa](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.23.jpeg)
+  ![connect arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.24.jpeg)
+
   5. Connect the Arduino board with the Jetson board. (Allways unplug all devices from power before connecting cables.)
   6. Run the [transmitter script](https://github.com/bas1to/lookleft/blob/master/transmitter.ino) on the Arduino. (You need the Arduino IDE for that.)
   7. (Start the Jetson)
@@ -67,12 +67,14 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 - **The warning device:**
   1. Connect the LED panel and the second Arduino.
   
-  **TODO:** Schaltplan Bild
-  
+  ![connect LED panel and arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.25.jpeg)
+
+
   2. Connect the second LoRa module and antenna to the Arduino.
   
-  **TODO:** Schaltplan Bild
-  
+  ![connect LoRa](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.23.jpeg)
+  ![connect arduino](https://github.com/bas1to/lookleft/blob/master/Documentation/WhatsApp%20Image%202020-02-20%20at%2014.51.24.jpeg)
+
   3. Run the [receiver script]( https://github.com/bas1to/lookleft/blob/master/receiver_panel_improved.ino) on the Arduino. (You need the Arduino IDE for that.)
 
 
@@ -81,8 +83,6 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 - Switch to the `Count Itmes` tab an set a counting line as needed. Everytime a vehicle crosses this line the warning will be send and the LED panel will warn the pedestrians.
 - Note: Our setup is limited for detecting vehicles only at the moment. (You can change that in the `config.json`.)
 - You need a monitor for setting up the camera and the counting line. After that the setup works fine without monitor and any peripherals.
-
-(Screenshots to come)
 
 ## Software architecture
 
