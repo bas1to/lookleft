@@ -93,5 +93,7 @@ Minseong Kim: [https://github.com/kmsk07]( https://github.com/kmsk07)
 
 Yichao Wang: [https://github.com/yichaowang467]( https://github.com/yichaowang467)
 
+We also want to thank the CityLab for constant assisstance and the hardware they lend us and also the professors and all other participants of FU-Berlin and KH-Berlin who made the project possible and all their feedback and advice. 
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE.txt]( https://github.com/bas1to/lookleft/blob/master/LICENSE.txt) file for details
