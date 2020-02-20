@@ -24,6 +24,7 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 [See video of the devices](https://vimeo.com/391959944)
 
 (Photos of the device and the visual signals)
+![Our Device](https://github.com/bas1to/lookleft/blob/master/Documentation/Picture%20of%20our%20Device.jpeg)
 
 ## Getting Started
 
