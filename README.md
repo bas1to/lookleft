@@ -12,6 +12,7 @@ A warning device for pedestrians, that shows a signal when a car is approaching.
     * [Installation](#installation)
     * [Usage](#usage)
 * [Acknowledgements](#acknowledgements)
+* [Software architecture](#software-architecture)
 * [License](#license)
 
 ## General Info
@@ -23,6 +24,7 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 
 [See video of the devices](https://vimeo.com/391959944)
 
+(Photos of the device and the visual signals)
 ![Our Device](https://github.com/bas1to/lookleft/blob/master/Documentation/Picture%20of%20our%20Device.jpeg)
 
 ## Getting Started
@@ -80,6 +82,11 @@ The devices communicate via LoRa. Since they are not too far away from each othe
 - Note: Our setup is limited for detecting vehicles only at the moment. (You can change that in the `config.json`.)
 - You need a monitor for setting up the camera and the counting line. After that the setup works fine without monitor and any peripherals.
 
+(Screenshots to come)
+
+## Software architecture
+
+The OpenDataCam is capable of recognizing and tracking diffrent objectives. It is using the real-time object detection system YOLO (you only look once). We use this tracking feature to start a pythonscript child process or to be more detailed: Everytime a from us selected object is counted and before it is written into the mongodb we start our script. The script then sets a pin on the Jetson microcontroller high. That pin is connected to an arduino uno that is connected to a LoRa chip and antenna which then sends a predetermined string (of your choice) via the LoRa network over the radio frenquency 9600 (you can change it) to our warning device and the other arduino uno (also with the LoRa chip and antenna). Our warning device is always listening for the string and when the right string is read, the device leaves the idle state and changes to the warning state. After 2 seconds it changes back to the idle state if it hasn't received another warning.
 
 ## Acknowledgements
 Bastian Breibert: [https://github.com/bas1to]( https://github.com/bas1to)
